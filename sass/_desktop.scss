@@ -1,0 +1,44 @@
+@media (min-width: 576px){
+    .cards {
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .card {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .box{
+        &__title{
+            font-size: 36px;
+        }
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .cyan {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self: center;
+    }
+    .red {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .orange {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .blue {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        align-self: center;
+    }
+}
